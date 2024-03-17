@@ -21,6 +21,25 @@ The dataset comprises tweets collected around the time of the 2019 Indonesian Pr
 2. **Data Cleaning**: We preprocess the data, removing URLs, hashtags, and normalizing Indonesian slang words.
 3. **Splitting Data**: The dataset is split into training and testing sets to prepare for model training.
 
+![Data_Understanding](images/Data_Understanding.jpg "Data_Understanding")
+
+From the Tweet Projection below, we found that the data is sparcely distributed and does not have any strong characteristics.
+![Tweet_Projection_TFIDF_LDA](images/Tweet_Projection_TFIDF_LDA.jpg "Tweet_Projection_TFIDF_LDA")
+
+Here is a sample wordcloud surrounding the keyword "Jokowi" with positive sentiment:
+![Wordcloud_Jokowi_Positif](images/Wordcloud_Jokowi_Positif.jpg "Wordcloud_Jokowi_Positif")
+
+### Text processing Workflow
+
+The diagram below shows our text processing workflow
+![Text_Preprocessing_Workflow](images/Text_Preprocessing_Workflow.jpg "Text_Preprocessing_Workflow")
+
+Here is some sample results of our text cleaning process:
+
+![Text_Cleaning_Result](images/Text_Cleaning_Result.jpg "Text_Cleaning_Result")
+
+The result is not entirely clean, as indicated on the picture above in the red rectangles, definitely some room from improvements.
+
 ## Sentiment Analysis
 
 We conducted sentiment analysis using multiple approaches:
@@ -29,6 +48,18 @@ We conducted sentiment analysis using multiple approaches:
 2. **Random Forest with Word2Vec**: Applied Word2Vec embeddings with Random Forest to classify sentiments.
 3. **LSTM Networks**: Utilized LSTM networks with both TF-IDF vectors and Word2Vec embeddings.
 4. **Benchmark Models**: Compared our models against pretrained models such as BERT, Indonesian-roberta-base-sentiment-classifier, NusaX-senti, and GPT-4 Turbo Preview.
+
+### Overall Accuracy
+
+![overall_accuracy](images/overall_accuracy.jpg "overall_accuracy")
+
+### Best Model
+
+![Best_Model](images/Best_Model.jpg "Best_Model")
+
+### Benchmark Test Results
+
+![benchmark_test_results](images/benchmark_test_results.jpg "benchmark_test_results")
 
 ## Findings and Conclusion
 
